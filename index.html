@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta id="view" name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
+		<title>Creating a Countdown</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.plugin.js"></script>
+		<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.countdown').countdown({
+				until: $.countdown.UTCDate(+12, 2017, 2, 14, 17, 0 ,0)
+		});
+		});
+		</script>
+		<div id="catan-countdown">
+			<div class="heading">
+				<h2>Countdown Time with jQuery</h2>
+			</div>
+			<div class="countdown"></div>
+		</div>
+		
+
+	</body>
+</html>
